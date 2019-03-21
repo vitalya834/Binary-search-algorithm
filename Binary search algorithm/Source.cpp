@@ -67,7 +67,7 @@ void square_bsearch(double a)
 	double low = 0.0;
 	double high = a;
 	int guesses = 0;
-	double guess = (high / low) / 2.0;
+	double guess = (high + low) / 2.0;
 	while (abs((pow(guess, 2)) - a) >= epicilon)
 	{
 		if (pow(guess, 2) < a)
